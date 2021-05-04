@@ -15,6 +15,10 @@
     <!-- Bootstrap core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 
+ <!--Model Viewer Import -->
+ <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+ <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -66,6 +70,9 @@
    <main class="px-3">
     <h1>Visor AR</h1>
     <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+    <div>
+      <model-viewer src="assets/brain.glb" ios-src="assets/brain.usdz" alt="Brain" background-color="#000000" camera-controls auto-rotate></model-viewer>         
+    </div>
     <p class="lead">
       <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
     </p>
